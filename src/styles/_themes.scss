@@ -1,0 +1,17 @@
+// Light Theme
+$light-primary-color: #ffffff;
+$light-secondary-color: #f8f9fa;
+$light-text-color: #212529;
+$light-link-color: #007bff;
+
+// Dark Theme
+$dark-primary-color: #343a40;
+$dark-secondary-color: #495057;
+$dark-text-color: #f8f9fa;
+$dark-link-color: #17a2b8;
+
+// Default to light theme
+$primary-color: $light-primary-color;
+$secondary-color: $light-secondary-color;
+$text-color: $light-text-color;
+$link-color: $light-link-color;

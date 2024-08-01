@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+// src/styles.scss
+
+@import 'styles/_themes';
+// src/styles.scss
+
+@import 'styles/_globals';
+
+/* Add any other global styles here */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.dark-theme {
+  --primary-color: #343a40; // Dark theme primary color
+  --secondary-color: #495057; // Dark theme secondary color
+  --text-color: #f8f9fa; // Dark theme text color
+  --link-color: #17a2b8; // Dark theme link color
+
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
+  a {
+    color: var(--link-color);
+  }
+}
+
+// Default to light theme
+body {
+  --primary-color: #ffffff; // Light theme primary color
+  --secondary-color: #f8f9fa; // Light theme secondary color
+  --text-color: #212529; // Light theme text color
+  --link-color: #007bff; // Light theme link color
+}

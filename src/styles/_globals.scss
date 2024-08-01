@@ -1,0 +1,59 @@
+// src/styles/_globals.scss
+
+/* Buttons */
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--primary-color-dark);
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+  }
+}
+
+/* Inputs */
+.input {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+}
+
+/* Cards */
+.card {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  margin: 1rem 0;
+
+  .card-header {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-body {
+    font-size: 1rem;
+  }
+
+  .card-footer {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+  }
+}
